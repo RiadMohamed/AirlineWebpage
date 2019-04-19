@@ -7,7 +7,7 @@
     <body>
         <fieldset id="airlineNewBookingFieldset">
                 <legend>New Booking</legend>
-                <table>
+                <table id="airlineNewBookingTable">
                     <tr>
                         <td>Passport Number :</td>
                         <td><input type="text" disabled name="passportNumberResult"></td>
@@ -41,6 +41,7 @@
                         <td><input type="text" disabled name="ticketTypeResult"></td>
                     </tr>
                 </table>
+                <button type="submit" onclick="airlineNewBooking()">Click to Create New Booking</button>
             </fieldset>
     </body>
 </html>
