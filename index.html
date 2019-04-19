@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Airport Home Page</title>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css">
+	</head>
+	<body>
+		<div id="dispatcherLoginFieldset">
+			<form action="dispatch.html" method="POST">
+				<fieldset>
+					<legend>Dispatcher Login</legend>
+					<table id="dispatcherLoginTable">
+						<tr>
+							<td>Username :</td>
+							<td><input type="text" name="username" id="DispatcherUsernameText"></td>
+						</tr>
+						<tr>
+							<td>Password :</td>
+							<td><input type="password" name="password" id="DispatcherPasswordText"></td>
+						</tr>
+					</table>
+					<button type="submit" onclick="dispatcherLogin()">Click to Login</button>
+				</fieldset>
+			</form>
+		</div>
+		<br/>
+		<hr/>
+		<br/>
+		<div id="airlineLoginFieldset">
+			<form action="airline.html" method="POST">
+				<fieldset>
+					<legend>Airline Login</legend>
+					<table id="airlineLoginTable">
+						<tr>
+							<td>Username :</td>
+							<td><input type="text" name="username" id = "AirlineUsernameText"></td>
+						</tr>
+						<tr>
+							<td>Password :</td>
+							<td><input type="password" name="password" id = "AirlinePasswordText"></td>
+						</tr>
+						<tr>
+							<td>Airline (ICAO) :</td>
+							<td><input type="text" name="AirlineICAO" id="AirlineICAOText"></td>
+						</tr>
+					</table>
+					<button type="submit" onclick="airlineLogin()">Click to Login</button>
+				</fieldset>
+			</form>
+		</div>
+		<br/>
+		<hr/>
+		<br/>
+		<div id="passengerSearchFieldset">
+			<form action="search.html" method="POST">
+				<fieldset>
+					<legend>Passenger Search</legend>
+					<table id="passengerSearchTable">
+						<tr>
+							<td>First Name :</td>
+							<td><input type="text" name="firstName" id = "passengerFirstName"></td>
+						</tr>
+						<tr>
+							<td>Last Name :</td>
+							<td><input type="password" name="lastName" id = "passengerLastName"></td>
+						</tr>
+						<tr>
+							<td>Passport Number :</td>
+							<td><input type="text" name="passportNumber" id="passengerPassportNumber"></td>
+						</tr>
+						<tr>
+							<td>Search Type :</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="searchType" value="name"> Name</td>
+							<td><input type="radio" name="searchType" value="passport"> Passport</td>
+						</tr>
+					</table>
+					<button type="submit" onclick="passengerSearch()">Click to Search</button>
+				</fieldset>
+			</form>
+		</div>
+		<br/>
+		<hr/>
+		<br/>
+		<form action="schedule.html">
+			<button type="submit" onclick="viewSchedule()">Click to view the schedule</button>
+		</form>
+	</body>
+</html>

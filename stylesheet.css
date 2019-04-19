@@ -1,0 +1,47 @@
+#dispatcherLoginFieldset {
+    width: 30%;
+}
+
+#airlineLoginFieldset {
+    width: 30%;
+}
+
+#passengerSearchFieldset {
+    width: 30%;
+}
+
+#passengerSearchResultFieldset {
+    width: 30%;
+}
+
+#dispatcherLoginTable {
+    padding-top: 1em;
+}
+
+#dispatcherLoginTable td {
+    padding-bottom: 1em;
+}
+
+#airlineLoginForm {
+    width: 30%;
+}
+
+#airlineLoginTable {
+    padding-top: 1em;
+}
+
+#airlineLoginTable td {
+    padding-bottom: 1em;
+}
+
+#passengerSearchForm {
+    width: 30%;
+}
+
+#passengerSearchTable {
+    padding-top: 1em;
+}
+
+#passengerSearchTable td {
+    padding-bottom: 1em;
+}
