@@ -9,11 +9,9 @@
     <meta name="author" content="">
 
 
-    <title>Sign-in</title>
+    <title>CSE334 Airlines</title>
 
-    <!-- Logo for the browser tab -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-
     <!-- Bootstrap core CSS -->
     <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -22,9 +20,18 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.js"
+      integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+      crossorigin="anonymous">
+    </script>
+
   </head>
 
   <body>
+
 
     <div class="site-wrapper">
 
@@ -40,61 +47,73 @@
                   <a class="nav-link" href="index.html">Book</a>
                   <a class="nav-link" href="#">Discover</a>
                   <a class="nav-link" href="#">Club</a>
-                  <a class="nav-link active" href="#">Sing-in</a>
+                  <a class="nav-link active" href="#">Sign-in</a>
                   <a class="nav-link" href="about.html">About us</a>
                 </nav>
               </div>
-              <img src="images/logo.png" alt="Logo" style="width:477px;">
             </div>
 
             <div class="inner cover">
 
 
-              <!-- <h1 class="cover-heading">Cover your page.</h1>
-              <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-              <p class="lead">
-                <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-              </p> -->
-                <br> <br> <br> <br> <br>
-                <ul class="nav nav-pills justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#sIn">Sign-in</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#sUp">Sign-up</a>
-                  </li>
+              <img src="images/logo.png" alt="Logo" style="width:37vw;">
+              <br><br><br>
+              <!-- TODO: Finish sign in form and sign up -->
 
-                </ul>
+                <div class="container" style="height:20rem">
+                  <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="sIn" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Sign-in</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">Sign-up</a>
+                    </li>
+                  </ul>
 
-                <!-- Tab panes -->
-                <div class="tab-content">
-                  <div id="sIn" class="container tab-pane active"><br>
-                    ِ<input type="text" name="E-mail" value="E-mail"> <br> <br>
-                    ِ<input type="password" name="password" value="Password">
 
+                  <!-- Tab panes -->
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                      <form class="container col">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1"></label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+                          <label for="exampleInputPassword1"></label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                      </form>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
                   </div>
-                  <div id="sUp" class="container tab-pane fade"><br>
-                    <h3>Menu 1</h3>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </div>
+
                 </div>
+
+
+            </div>
+
+
 
 
               <script>
               $(document).ready(function(){
-                $(".nav-tabs a").click(function(){
+                $(".nav-pills a").click(function(){
                   $(this).tab('show');
                 });
               });
               </script>
 
+              <div class="mastfoot">
+                <div class="inner">
+                  <p>Credits <a href="https://github.com/RiadMohamed/AirportWebpage">CSE334</a>, by <a href="mailto:dabour97@gmail.com?Subject=Customer%Feedback">Airline Team</a>.</p>
+                </div>
+              </div>
 
             </div>
 
-            <div class="mastfoot">
-              <div class="inner">
-                <p>Credits <a href="https://github.com/RiadMohamed/AirportWebpage">CSE334</a>, by <a href="mailto:dabour97@gmail.com?Subject=Customer%Feedback">Airline Team</a>.</p>
-              </div>
             </div>
 
         </div>
@@ -106,11 +125,16 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="http://v4-alpha.getbootstrap.com/assets/js/vendor/jquery.min.js"></script>
-    <script src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+    <!-- tether dependency for bootstrap4 alpha  -->
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+
+    <!-- jQuery required for bootstrap4  -->
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
 
 
   </body>
