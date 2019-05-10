@@ -12,6 +12,12 @@
     <title>CSE334 Airlines</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
     <!-- Bootstrap core CSS -->
     <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,7 +27,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <!-- jQuery  -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.js"
       integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
@@ -87,18 +93,74 @@
                       <div class="container" style="height:1rem">
 
                         <!-- choose the type of the ticket  -->
-                        <div class="form-check-inline">
-                          <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio">One way
-                          </label>
-                        </div>
-                        <div class="form-check-inline">
-                          <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio">Round trip
-                          </label>
-                        </div>
-                        <!-- select the departure & arrival data   -->
+                        <fieldset style="justify-content-center">
 
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio"> One way
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio"> Round trip
+                            </label>
+                          </div> <br>
+                          <!-- select the departure & arrival data   -->
+                          <input type="text" placeholder="From" autocomplete="on" value="">
+                          <input type="text" placeholder="To" autocomplete="on" value=""> <br> <br>
+                          <span class="label label-default"><small>Depart</small> <input type="date" placeholder="Depart" max="">
+                          </span>
+                          <span class="label label-default"><input type="date" placeholder="Return" mex="">
+                            <small>Return</small>
+                          </span> <br> <br>
+
+                          <div class="btn-group ">
+                            <button type="button" class="btn ">Adults</button>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">1</a>
+                              <a class="dropdown-item" href="#">2</a>
+                              <a class="dropdown-item" href="#">3</a>
+                              <a class="dropdown-item" href="#">4</a>
+                            </div>
+                          </div>
+
+                          <div class="btn-group ">
+                            <button type="button" class="btn ">Children</button>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">1</a>
+                              <a class="dropdown-item" href="#">2</a>
+                              <a class="dropdown-item" href="#">3</a>
+                              <a class="dropdown-item" href="#">4</a>
+                            </div>
+                          </div>
+
+                          <div class="btn-group ">
+                            <button type="button" class="btn ">Infants</button>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">1</a>
+                              <a class="dropdown-item" href="#">2</a>
+                              <a class="dropdown-item" href="#">3</a>
+                              <a class="dropdown-item" href="#">4</a>
+                            </div>
+                          </div>
+                          <br> <br>
+                          <button type="button" class="btn btn-danger">
+                          Show flights</button>
+
+
+
+
+
+                        </fieldset>
                       </div>
 
                     </div>
@@ -115,7 +177,8 @@
                 </div>
               </div>
 
-<!--                  Scripts section <! TODO: Adding scripts on external file  -->
+
+<!--           Scripts section <! TODO: Adding scripts on external file  -->
               <!-- jQuery function to change the taps  -->
               <script>
               $(document).ready(function(){
@@ -145,6 +208,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+
+
 
     <!-- tether dependency for bootstrap4 alpha  -->
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
