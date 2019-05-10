@@ -39,6 +39,7 @@
 
        <div class="cover-container">
 
+         <!-- Navigation bar containing the website pages   -->
             <div class="masthead clearfix">
               <div class="inner">
                 <h4 class="masthead-brand">Above <small>the sky</small> </h4>
@@ -56,12 +57,14 @@
 
             </div>
 
+          <!-- Body of the page  -->
             <div class="inner cover">
 
-
+              <!--Logo of the company  -->
               <img src="images/logo.png" alt="Logo" style="width:37vw;">
               <br><br><br>
 
+                <!-- Tabs -->
                 <ul class="nav nav-tabs justify-content-center">
                   <li class="nav-item">
                     <a class="nav-link active" href="#book">Book</a>
@@ -74,30 +77,46 @@
                   </li>
                 </ul>
 
-                <!-- Tab panes -->
+                <!-- Tabs content -->
 
-                <div class="container" style="height:19rem">
+                <div class="container" style="height:17.4rem">
 
                   <div class="tab-content">
-                    <div id="book" class="container tab-pane active"><br>
-                      <div class="container" >
+                    <!-- Book tab container  -->
+                    <div id="book" class="container tab-pane active">
+                      <div class="container" style="height:1rem">
 
-                        <script type="text/javascript" src="https://form.myjotform.com/jsform/91243937672565"></script>
+                        <!-- choose the type of the ticket  -->
+                        <div class="form-check-inline">
+                          <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">One way
+                          </label>
+                        </div>
+                        <div class="form-check-inline">
+                          <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Round trip
+                          </label>
+                        </div>
+                        <!-- select the departure & arrival data   -->
+
                       </div>
 
                     </div>
+
+                    <!-- Manage booking tab container  -->
                     <div id="mbooking" class="container tab-pane fade"><br>
-                      <h3>Menu 1</h3>
-                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+
                     </div>
                     <div id="flight" class="container tab-pane fade"><br>
                       <h3>Menu 2</h3>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                      <p>for the reason you have to change the way of doing things for a great work in the instructoin resulting of the going event on the structure.</p>
                     </div>
                 </div>
               </div>
 
-
+<!--                  Scripts section <! TODO: Adding scripts on external file  -->
+              <!-- jQuery function to change the taps  -->
               <script>
               $(document).ready(function(){
                 $(".nav-tabs a").click(function(){
@@ -109,6 +128,7 @@
 
             </div>
 
+            <!-- footer of the page containing email and github repository of the project -->
             <div class="mastfoot">
               <div class="inner">
                 <p>Credits <a href="https://github.com/RiadMohamed/AirportWebpage">CSE334</a>, by <a href="mailto:dabour97@gmail.com?Subject=Customer%Feedback">Airline Team</a>.</p>
