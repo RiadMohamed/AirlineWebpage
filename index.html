@@ -12,6 +12,9 @@
     <title>CSE334 Airlines</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+
+
+
     <!-- Bootstrap core CSS -->
     <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,7 +24,10 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <!-- Font Awesome for icons   -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- jQuery  -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.js"
       integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
@@ -87,6 +93,7 @@
                       <div class="container" style="height:1rem">
 
                         <!-- choose the type of the ticket  -->
+<<<<<<< HEAD
                         <div class="form-check-inline">
                           <label class="form-check-label">
                             <input type="radio" class="form-check-input" name="optradio">One way
@@ -99,23 +106,122 @@
                         </div>
                         <!-- select the departure & arrival data   -->
 
+=======
+                        <fieldset style="justify-content-center">
+
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio"> One way
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio"> Round trip
+                            </label>
+                          </div> <br>
+                          <!-- select the departure & arrival data   -->
+                          <input type="text" placeholder="From" autocomplete="on" value="">
+                          <input type="text" placeholder="To" autocomplete="on" value=""> <br> <br>
+                          <span class="label label-default"><small>Depart</small> <input type="date" placeholder="Depart" max="">
+                          </span>
+                          <span class="label label-default"><input type="date" placeholder="Return" mex="">
+                            <small>Return</small>
+                          </span> <br> <br>
+
+                          <div class="btn-group ">
+                            <button type="button" class="btn ">Adults</button>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">1</a>
+                              <a class="dropdown-item" href="#">2</a>
+                              <a class="dropdown-item" href="#">3</a>
+                              <a class="dropdown-item" href="#">4</a>
+                            </div>
+                          </div>
+
+                          <div class="btn-group ">
+                            <button type="button" class="btn ">Children</button>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">1</a>
+                              <a class="dropdown-item" href="#">2</a>
+                              <a class="dropdown-item" href="#">3</a>
+                              <a class="dropdown-item" href="#">4</a>
+                            </div>
+                          </div>
+
+                          <div class="btn-group ">
+                            <button type="button" class="btn ">Infants</button>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">1</a>
+                              <a class="dropdown-item" href="#">2</a>
+                              <a class="dropdown-item" href="#">3</a>
+                              <a class="dropdown-item" href="#">4</a>
+                            </div>
+                          </div>
+                          <br> <br>
+                          <button type="button" class="btn btn-danger">
+                          Show flights</button>
+                        </fieldset>
+>>>>>>> dev
                       </div>
 
                     </div>
 
                     <!-- Manage booking tab container  -->
                     <div id="mbooking" class="container tab-pane fade"><br>
+<<<<<<< HEAD
+=======
+                      <fieldset>
+
+                        <input type="text" placeholder="Last Name" autocomplete="on" value="">
+                        <input type="text" placeholder="Booking refrence" autocomplete="on" value="">
+                        <br> <br>
+                        <button type="button" class="btn btn-danger">
+                          Retrieve booking</button>
+                      </fieldset>
+>>>>>>> dev
 
 
                     </div>
                     <div id="flight" class="container tab-pane fade"><br>
+<<<<<<< HEAD
                       <h3>Menu 2</h3>
                       <p>for the reason you have to change the way of doing things for a great work in the instructoin resulting of the going event on the structure.</p>
+=======
+                      <fieldset>
+                        <input type="text" placeholder="From / Flight number" autocomplete="on" value="">
+                          <input type="text" placeholder="To" autocomplete="on" value="">
+                          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                             <option selected>Choose...</option>
+                             <option value="1">One</option>
+                             <option value="2">Two</option>
+                             <option value="3">Three</option>
+                         </select>
+                         <br> <br>
+                         <button type="button" class="btn btn-danger">
+                           Show flights</button>
+
+                      </fieldset>
+>>>>>>> dev
                     </div>
+
                 </div>
               </div>
 
+<<<<<<< HEAD
 <!--                  Scripts section <! TODO: Adding scripts on external file  -->
+=======
+
+<!--           Scripts section <! TODO: Adding scripts on external file  -->
+>>>>>>> dev
               <!-- jQuery function to change the taps  -->
               <script>
               $(document).ready(function(){
@@ -145,6 +251,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+
+
 
     <!-- tether dependency for bootstrap4 alpha  -->
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>

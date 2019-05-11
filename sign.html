@@ -21,7 +21,10 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <!-- Font Awesome for icons   -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- jQuery  -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.js"
       integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
@@ -65,30 +68,64 @@
                     <li class="nav-item">
                       <a class="nav-link active" id="sIn" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Sign-in</a>
                     </li>
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                       <a class="nav-link " id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">Sign-up</a>
-                    </li> -->
+                    </li>
                   </ul>
 
 
                   <!-- Tab panes -->
                   <div class="tab-content" id="pills-tabContent">
+
+                    <!-- Signin form -->
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                       <form class="container col">
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                           <label for="exampleInputEmail1"></label>
                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          <
 
                           <label for="exampleInputPassword1"></label>
                           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 
-                        </div>
+                        </div> -->
+
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">
+                              <i class="fa fa-envelope"></i>
+                            </span>
+                            <input class="form-control" type="text" aria-describedby="emailHelp" placeholder="Email address">
+                            <style media="screen">
+                              .down{
+
+                                    margin: auto;
+                                    width: 50%;
+                                    padding: 10px;
+                                    }
+
+                            </style>
+                            <div class="down">
+                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                          </div>
+                          <div class="input-group input-group-lg">
+                            <span class="input-group-addon">
+                              <i class="fa fa-lock"></i>
+                            </span>
+                            <input class="form-control" type="password" placeholder="Password">
+                          </div> <br>
                         <button type="submit" class="btn btn-primary">Login</button>
                       </form>
                     </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+
+                    <!-- Signup form  -->
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+
+                    </div>
                   </div>
+
+
 
                 </div>
 
