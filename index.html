@@ -48,7 +48,7 @@
          <!-- Navigation bar containing the website pages   -->
             <div class="masthead clearfix">
               <div class="inner">
-                <h4 class="masthead-brand">Above <small>the sky</small> </h4>
+                <h4 class="masthead-brand">Above <small>the sky</small> <i class="fas fa-plane-departure"></i> </h4>
                 <nav class="nav  nav-masthead nav-justified">
                   <!-- TODO: Complete the pages -->
                   <a class="nav-link  active" href="index.html">Book</a>
@@ -94,7 +94,7 @@
 
                         <!-- choose the type of the ticket  -->
                         <fieldset style="justify-content-center">
-
+                          <!-- TODO: change the input dependent on the input from the radio button  -->
                           <div class="form-check-inline">
                             <label class="form-check-label">
                               <input type="radio" class="form-check-input" name="optradio"> One way
@@ -108,15 +108,16 @@
                           <!-- select the departure & arrival data   -->
                           <input type="text" placeholder="From" autocomplete="on" value="">
                           <input type="text" placeholder="To" autocomplete="on" value=""> <br> <br>
-                          <span class="label label-default"><small>Depart</small> <input type="date" placeholder="Depart" max="">
+                          <span class="label label-default"><small> <i class="fas fa-plane-departure"></i>
+                            Depart</small> <input type="date" placeholder="Depart" max="">
                           </span>
                           <span class="label label-default"><input type="date" placeholder="Return" mex="">
-                            <small>Return</small>
-                          </span> <br> <br>
+                            <small>Return <i class="fas fa-plane-arrival"></i></small>
+                          </span>
 
                           <div class="btn-group ">
                             <button type="button" class="btn ">Adults</button>
-                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <div class="dropdown-menu">
@@ -129,7 +130,7 @@
 
                           <div class="btn-group ">
                             <button type="button" class="btn ">Children</button>
-                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <div class="dropdown-menu">
@@ -140,9 +141,9 @@
                             </div>
                           </div>
 
-                          <div class="btn-group ">
+                          <div class="btn-group " >
                             <button type="button" class="btn ">Infants</button>
-                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <div class="dropdown-menu">
@@ -152,9 +153,13 @@
                               <a class="dropdown-item" href="#">4</a>
                             </div>
                           </div>
-                          <br> <br>
-                          <button type="button" class="btn btn-danger">
-                          Show flights</button>
+                          <style media="screen">
+                            .btn{
+                              margin-top: .7rem;
+                            }
+                          </style>
+                          <button type="button" class="btn btn-primary">
+                          Show flights <i class="fas fa-plane"></i></button>
                         </fieldset>
                       </div>
 
@@ -166,9 +171,9 @@
 
                         <input type="text" placeholder="Last Name" autocomplete="on" value="">
                         <input type="text" placeholder="Booking refrence" autocomplete="on" value="">
-                        <br> <br>
-                        <button type="button" class="btn btn-danger">
-                          Retrieve booking</button>
+                        <br>
+                        <button type="button" id="exp" class="btn btn-primary">
+                          Retrieve booking <i class="fas fa-undo-alt"></i></button>
                       </fieldset>
 
 
@@ -177,15 +182,26 @@
                       <fieldset>
                         <input type="text" placeholder="From / Flight number" autocomplete="on" value="">
                           <input type="text" placeholder="To" autocomplete="on" value="">
-                          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                          <style media="screen">
+                            #modi{
+                              height:calc(2rem);
+                              margin-top: .rem!important
+                              border: none;
+                              padding-top: 3px;
+                              padding-bottom: 3px;
+                              margin-top: 0px;
+
+                            }
+                          </style>
+                          <select class="custom-select my-1 mr-sm-2" id="modi">
                              <option selected>Choose...</option>
                              <option value="1">One</option>
                              <option value="2">Two</option>
                              <option value="3">Three</option>
                          </select>
-                         <br> <br>
-                         <button type="button" class="btn btn-danger">
-                           Show flights</button>
+
+                         <button type="button" class="btn btn-primary">
+                           Show flights <i class="fas fa-plane"></i> </button>
 
                       </fieldset>
                     </div>
@@ -209,7 +225,10 @@
             <!-- footer of the page containing email and github repository of the project -->
             <div class="mastfoot">
               <div class="inner">
-                <p>Credits <a href="https://github.com/RiadMohamed/AirportWebpage">CSE334</a>, by <a href="mailto:dabour97@gmail.com?Subject=Customer%Feedback">Airline Team</a>.</p>
+                <p>Credits <a href="https://github.com/RiadMohamed/AirportWebpage"><i class="far fa-copyright"></i>
+                   CSE334</a>, by <a href="mailto:dabour97@gmail.com?Subject=Customer%Feedback">Airline Team <i class="fa fa-envelope"></i>
+                </a>
+              </p>
               </div>
             </div>
 
