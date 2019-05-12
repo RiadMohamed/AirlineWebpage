@@ -24,6 +24,9 @@
     <!-- Font Awesome for icons   -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+
     <!-- jQuery  -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.js"
@@ -50,7 +53,7 @@
                   <a class="nav-link" href="index.html">Book</a>
                   <!-- <a class="nav-link" href="#">Discover</a> -->
                   <!-- <a class="nav-link" href="#">Club</a> -->
-                  <a class="nav-link active" href="#">Sign-in</a>
+                  <a class="nav-link active" href="#">Sign in</a>
                   <a class="nav-link" href="about.html">About us</a>
                 </nav>
               </div>
@@ -64,14 +67,17 @@
               <!-- TODO: Finish sign in form and sign up -->
 
                 <div class="container" style="height:20rem">
-                  <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="sIn" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Sign-in <i class="fas fa-sign-in-alt"></i></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">Sign up <i class="fas fa-user-plus"></i></a>
-                    </li>
-                  </ul>
+                  <div class="container" style="height:2.5rem">
+
+                    <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="sIn" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Sign-in <i class="fas fa-sign-in-alt"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">Sign up <i class="fas fa-user-plus"></i></a>
+                      </li>
+                    </ul>
+                  </div>
 
 
                   <!-- Tab panes -->
@@ -83,8 +89,6 @@
                         <div class="form-group">
                           <label for="exampleInputEmail1"></label>
                             <i class="fa fa-envelope left-alignment"></i>
-
-
                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 
@@ -103,9 +107,88 @@
 
                     <!-- Signup form  -->
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                      <form>
+                        <div class="container col-lg-12">
 
+                          <fieldset name="signupWithSocial">
+                            <small>Sign up using</small>
+                            <style media="screen">
+                            ul#media li{
+                              display: inline;
+                              content: justify;
+                              padding: inherit;
+                              padding-left: 7px;
+                            }
+
+                            #media{
+                              padding-left: 0px;
+                            }
+                            </style>
+                            <ul id="media">
+                              <li>
+                                <a  rel="tooltip" title="Sign up with Twitter" data-placement="bottom"
+                                href="https://twitter.com" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                                <p class="d-lg-none d-xl-none">Twitter</p>
+                              </a>
+                            </li>
+                            <li >
+                              <a rel="tooltip" title="Sign up with Facebook" data-placement="bottom"
+                              href="https://www.facebook.com" target="_blank">
+                              <i class="fab fa-facebook-square"></i>
+                              <p class="d-lg-none d-xl-none">Facebook</p>
+                            </a>
+                          </li>
+                          <li >
+                            <a  rel="toolip" title="Sign up with Google" data-placement="bottom"
+                            href="https://www.google.com" target="_blank">
+                            <i class="fab fa-google"></i>
+                            <p class="d-lg-none d-xl-none">Google</p>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="btn-group ">
+                        <button type="button" class="btn" style="margin-bottom:5px; bottom:5px;">Title</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" style="margin-bottom:5px; bottom:5px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Mr</a>
+                          <a class="dropdown-item" href="#">Ms</a>
+                          <a class="dropdown-item" href="#">Miss</a>
+                          <a class="dropdown-item" href="#">Mrs</a>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset>
+
+                      <style media="screen">
+                      #name{
+                        width:15rem;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        text-align:center;
+                        margin-top: 5px;
+                      }
+                      </style>
+
+                      <input type="text" id="name" placeholder="First name (as in passport)" autocomplete="on" value="">
+                      <input type="text" id="name" placeholder="Last name (as in passport)" autocomplete="on" value=""> <br>
+                      <input type="text" id="name" placeholder="Enter email" autocomplete="on" value="">
+                      <input type="password" id="name" placeholder="Type a password" autocomplete="on" style="margin-right:5px;"value="">
+                      <input type="password" id="name" placeholder="Retype password" autocomplete="on" value="">
+                      <p>I agree to the CSE334 Airlines <a title="Legal" href="about.html" target="_blank">terms and conditions</a>. <input type="checkbox" ></p>
+                    </fieldset>
+                    </form>
+                    <div class="container" style="bottom:1.5rem;">
+                      <button type="submit" id="log" class="btn btn-primary">Login</button>
 
                     </div>
+                </div>
+
+
+
+                </div>
                   </div>
 
 

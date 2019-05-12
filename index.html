@@ -27,6 +27,8 @@
     <!-- Font Awesome for icons   -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
     <!-- jQuery  -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.js"
@@ -95,6 +97,21 @@
                         <!-- choose the type of the ticket  -->
                         <fieldset style="justify-content-center">
                           <!-- TODO: change the input dependent on the input from the radio button  -->
+                          <style media="screen">
+                              .form-check-input[type="radio"]:checked + label:after,
+                              .form-check-input[type="radio"].with-gap:checked + label:before,
+                              .form-check-input[type="radio"].with-gap:checked + label:after,
+                              label.btn input[type="radio"]:checked + label:after,
+                              label.btn input[type="radio"].with-gap:checked + label:before,
+                              label.btn input[type="radio"].with-gap:checked + label:after {
+                              border: 2px solid #4285f4; }
+
+                              .form-check-input[type="radio"]:checked + label:after,
+                              .form-check-input[type="radio"].with-gap:checked + label:after,
+                              label.btn input[type="radio"]:checked + label:after,
+                              label.btn input[type="radio"].with-gap:checked + label:after {
+                              background-color: #0000E1; }
+                          </style>
                           <div class="form-check-inline">
                             <label class="form-check-label">
                               <input type="radio" class="form-check-input" name="optradio"> One way
@@ -109,14 +126,14 @@
                           <input type="text" placeholder="From" autocomplete="on" value="">
                           <input type="text" placeholder="To" autocomplete="on" value=""> <br> <br>
                           <span class="label label-default"><small> <i class="fas fa-plane-departure"></i>
-                            Depart</small> <input type="date" placeholder="Depart" max="">
+                            Depart</small> <input type="date" placeholder="Depart" min="2019-05-12">
                           </span>
-                          <span class="label label-default"><input type="date" placeholder="Return" mex="">
+                          <span class="label label-default"><input type="date" placeholder="Return" min="2019-05-12">
                             <small>Return <i class="fas fa-plane-arrival"></i></small>
                           </span>
 
                           <div class="btn-group ">
-                            <button type="button" class="btn ">Adults</button>
+                            <button type="button" class="btn ">Adults</disabled>
                             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <span class="sr-only">Toggle Dropdown</span>
                             </button>
@@ -129,7 +146,7 @@
                           </div>
 
                           <div class="btn-group ">
-                            <button type="button" class="btn ">Children</button>
+                            <button type="button" class="btn ">Children</disabled>
                             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <span class="sr-only">Toggle Dropdown</span>
                             </button>
@@ -142,7 +159,7 @@
                           </div>
 
                           <div class="btn-group " >
-                            <button type="button" class="btn ">Infants</button>
+                            <button type="button" class="btn ">Infants</disabled>
                             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <span class="sr-only">Toggle Dropdown</span>
                             </button>
@@ -201,7 +218,7 @@
                          </select>
 
                          <button type="button" class="btn btn-primary">
-                           Show flights <i class="fas fa-plane"></i> </button>
+                           Search flights <i class="fas fa-plane"></i> </button>
 
                       </fieldset>
                     </div>
