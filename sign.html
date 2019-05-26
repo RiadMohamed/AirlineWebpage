@@ -38,36 +38,35 @@
 
   <body>
 
+      <div class="container-fluid">
+          <div class="navbar navbar-fluid navbar-expand-xl py-0 navbar-light bg-white font-weight-bold sticky-top mb-3">
+           <div class="row justify-content-around">
+             <div class="container col-6">
+           <h4 class="masthead-brand">Above <small>the sky</small><i class="fas fa-plane-departure"></i> </h4>
+         </div>
+         <div class="container col-6">
+                 <nav class="nav  nav-masthead nav-justified">
+                   <a class="nav-link  " href="index.html">Book</a>
+                   <a class="nav-link active mx-2" href="sign.html">Sign-in</a>
+                   <a class="nav-link mx-0" href="about.html">About us</a>
+                 </nav>
+             </div>
+           </div>
+         </div>
+       </div>
+ 
+           <div class="container mt-0 mb-3">
+               <img src="images/logo.png" alt="Logo" style="width:37vw;">
+           </div>
+ 
 
-    <div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
+      
 
-       <div class="cover-container">
-
-            <div class="masthead clearfix">
-              <div class="inner">
-                <h4 class="masthead-brand">Above <small>the sky</small> <i class="fas fa-plane-departure"></i> </h4>
-                <nav class="nav  nav-masthead nav-justified">
-
-                  <a class="nav-link" href="index.html">Book</a>
-                  <!-- <a class="nav-link" href="#">Discover</a> -->
-                  <!-- <a class="nav-link" href="#">Club</a> -->
-                  <a class="nav-link active" href="#">Sign in</a>
-                  <a class="nav-link" href="about.html">About us</a>
-                </nav>
-              </div>
-            </div>
-
-            <div class="inner cover">
-
-
-              <img src="images/logo.png" alt="Logo" style="width:37vw;">
-              <br><br><br>
-              <!-- TODO: Finish sign in form and sign up -->
-
-                <div class="container" style="height:20rem">
-                  <div class="container" style="height:2.5rem">
+                <div class="container">
+                 
+                 
+                  <div class="container" >
 
                     <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
                       <li class="nav-item">
@@ -79,86 +78,79 @@
                     </ul>
                   </div>
 
-
                   <!-- Tab panes -->
                   <div class="tab-content" id="pills-tabContent">
+                     
 
                     <!-- Signin form -->
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" style="height:1rem;">
-                      <form class="container col">
-                        <div class="form-group">
+
+
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="form-group">
+                            <div class="container">
+                              <div class="row justify-content-between">
+                      <div class="container col-6">
                           <label for="exampleInputEmail1"></label>
                             <i class="fa fa-envelope left-alignment"></i>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"  style=" background-color: rgb(51,51,51); color: rgb(239,239,239);">
+                        </div>
 
+                        <div class="container col-6">  
                           <label for="exampleInputPassword1"></label>
                           <i class="fa fa-lock"></i>
-                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                          <style media="screen">
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"  style=" background-color: rgb(51,51,51); color: rgb(239,239,239);">
+                        </div>
+
+                        <div class="container">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          <button type="submit" id="log" class="btn btn-primary">Login</button>
+                        </div>
+                            
+                            <style media="screen">
                             #log{
                               margin-top: .7rem;
                             }
                           </style>
-                          <button type="submit" id="log" class="btn btn-primary">Login</button>
-                        </div>
 
+                          
+                        </div>
+                      </div>
+                    </div>
                     </div>
 
                     <!-- Signup form  -->
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                       <form>
-                        <div class="container col-lg-12">
-
                           <fieldset name="signupWithSocial">
                             <small>Sign up using</small>
-                            <style media="screen">
-                            ul#media li{
-                              display: inline;
-                              content: justify;
-                              padding: inherit;
-                              padding-left: 7px;
-                            }
 
-                            #media{
-                              padding-left: 0px;
-                            }
-                            </style>
-                            <ul id="media">
-                              <li>
+                        <div class="container col-3 my-1">
+                          <div class="row justify-content-center">
+                          
+                              <div class="container col-4 ">
                                 <a  rel="tooltip" title="Sign up with Twitter" data-placement="bottom"
                                 href="https://twitter.com" target="_blank">
                                 <i class="fab fa-twitter"></i>
-                                <p class="d-lg-none d-xl-none">Twitter</p>
                               </a>
-                            </li>
-                            <li >
+                            </div>
+                            <div class="container col-4">
+                              
                               <a rel="tooltip" title="Sign up with Facebook" data-placement="bottom"
                               href="https://www.facebook.com" target="_blank">
                               <i class="fab fa-facebook-square"></i>
-                              <p class="d-lg-none d-xl-none">Facebook</p>
                             </a>
-                          </li>
-                          <li >
+                          </div>
+                            
+                            <div class="container col-4">
                             <a  rel="toolip" title="Sign up with Google" data-placement="bottom"
                             href="https://www.google.com" target="_blank">
                             <i class="fab fa-google"></i>
-                            <p class="d-lg-none d-xl-none">Google</p>
                           </a>
                         </li>
-                      </ul>
-                      <div class="btn-group ">
-                        <button type="button" class="btn" style="margin-bottom:5px; bottom:5px;">Title</button>
-                        <button type="button" class="btn btn-primary dropdown-toggle" style="margin-bottom:5px; bottom:5px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Mr</a>
-                          <a class="dropdown-item" href="#">Ms</a>
-                          <a class="dropdown-item" href="#">Miss</a>
-                          <a class="dropdown-item" href="#">Mrs</a>
-                        </div>
-                      </div>
+                    </div>
+                    </div>
+                     
+                    
                     </fieldset>
                     <fieldset>
 
@@ -172,35 +164,51 @@
                       }
                       </style>
 
-                      <input type="text" id="name" placeholder="First name (as in passport)" autocomplete="on" value="">
-                      <input type="text" id="name" placeholder="Last name (as in passport)" autocomplete="on" value=""> <br>
-                      <input type="text" id="name" placeholder="Enter email" autocomplete="on" value="">
-                      <input type="password" id="name" placeholder="Type a password" autocomplete="on" style="margin-right:5px;"value="">
-                      <input type="password" id="name" placeholder="Retype password" autocomplete="on" value="">
-                      <p>I agree to the CSE334 Airlines <a title="Legal" href="about.html" target="_blank">terms and conditions</a>. <input type="checkbox" ></p>
+            <div class="form-group">
+                      <div class="container">
+                      <div class="row my-1">
+                        <div class="container col-6">
+                        <input type="text" class="form-control" placeholder="First name (as in passport)" autocomplete="on" value="" style="height: 2.5rem;background-color: rgb(51,51,51); color: rgb(239,239,239);">
+                      </div>
+                      <div class="container col-6">
+
+                        <input type="text" class="form-control" placeholder="Last name (as in passport)" autocomplete="on" value="" style="height: 2.5rem;background-color: rgb(51,51,51); color: rgb(239,239,239);">
+                      </div>
+                      </div>
+                  
+                        <input type="text" class="form-control my-1" placeholder="Enter email" autocomplete="on" value="" style="height: 2.5rem;background-color: rgb(51,51,51); color: rgb(239,239,239);">
+                  <div class="row my-1">
+                      <div class="container col-6">
+
+                    <input type="text" class="form-control" placeholder="Type a password" autocomplete="on" value="" style="height: 2.5rem;background-color: rgb(51,51,51); color: rgb(239,239,239);">
+                  </div>
+                  <div class="container col-6">
+                        <input type="text" class="form-control" placeholder="Retype password" autocomplete="on" value="" style="height: 2.5rem;background-color: rgb(51,51,51); color: rgb(239,239,239);">
+                     </div>
+                     </div>
+                    </div>
+                    </div>
+
+                    
+                    <div class="container">
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">I agree to the CSE334 Airlines<a title="Legal" href="about.html" target="_blank">terms and conditions</a>.
+                            </label>
+                          </div>
+                    </div>
                     </fieldset>
                     </form>
-                    <div class="container" style="bottom:1.5rem;">
+                    <div class="container">
                       <button type="submit" id="log" class="btn btn-primary">Login</button>
 
                     </div>
                 </div>
-
-
-
-                </div>
-                  </div>
-
+              </div>
 
 
                 </div>
-
-
-            </div>
-
-
-
-
+   
               <script>
               $(document).ready(function(){
                 $(".nav-pills a").click(function(){
@@ -209,26 +217,15 @@
               });
               </script>
 
-              <div class="mastfoot">
-
-                <div class="inner">
-                  <p>Credits <a href="https://github.com/RiadMohamed/AirportWebpage"><i class="far fa-copyright"></i>
-                     CSE334</a>, by <a href="mailto:dabour97@gmail.com?Subject=Customer%Feedback">Airline Team <i class="fa fa-envelope"></i>
-                  </a>
-                </p>
-                </div>
-
-              </div>
-            </div>
-
-            </div>
-
+         <div class="footer container mt-4">
+              
+            <p>Credits <a href="https://github.com/RiadMohamed/AirportWebpage"><i class="far fa-copyright"></i>
+               CSE334</a>, by <a href="mailto:dabour97@gmail.com?Subject=Customer%Feedback">Airline Team <i class="fa fa-envelope"></i>
+            </a>
+          </p>
         </div>
-
-      </div>
-
-    </div>
-
+         
+     
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

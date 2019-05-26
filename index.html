@@ -8,7 +8,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-
     <title>CSE334 Airlines</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
@@ -36,41 +35,36 @@
       crossorigin="anonymous">
     </script>
 
+    
+
   </head>
-
   <body>
-
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-       <div class="cover-container">
-
          <!-- Navigation bar containing the website pages   -->
-            <div class="masthead clearfix">
-              <div class="inner">
-                <h4 class="masthead-brand">Above <small>the sky</small> <i class="fas fa-plane-departure"></i> </h4>
+     <div class="container-fluid">
+         <div class="navbar navbar-fluid navbar-expand-xl py-0 navbar-light bg-white font-weight-bold sticky-top mb-3">
+          <div class="row justify-content-around">
+            <div class="container col-6">
+          <h4 class="masthead-brand">Above <small>the sky</small><i class="fas fa-plane-departure"></i> </h4>
+        </div>
+        <div class="container col-6">
                 <nav class="nav  nav-masthead nav-justified">
-                  <!-- TODO: Complete the pages -->
-                  <a class="nav-link  active" href="index.html">Book</a>
-                  <!-- <a class="nav-link" href="#">Discover</a> -->
-                  <!-- <a class="nav-link" href="#">Club</a> -->
-                  <a class="nav-link" href="sign.html">Sign-in</a>
-                  <a class="nav-link" href="about.html">About us</a>
+                  <a class="nav-link active " href="index.html">Book</a>
+                  <a class="nav-link mx-2" href="sign.html">Sign-in</a>
+                  <a class="nav-link mx-0" href="about.html">About us</a>
                 </nav>
-              </div>
-
-
-
             </div>
+          </div>
+        </div>
+      </div>
+
+          <div class="container mt-0">
+              <img src="images/logo.png" alt="Logo" style="width:37vw;">
+          </div>
 
           <!-- Body of the page  -->
-            <div class="inner cover">
+            <div class="container mt-5">
 
               <!--Logo of the company  -->
-              <img src="images/logo.png" alt="Logo" style="width:37vw;">
-              <br><br><br>
 
                 <!-- Tabs -->
                 <ul class="nav nav-tabs justify-content-center">
@@ -87,15 +81,15 @@
 
                 <!-- Tabs content -->
 
-                <div class="container" style="height:17.4rem">
+                <div class="container" style="height:21rem">
 
                   <div class="tab-content">
                     <!-- Book tab container  -->
                     <div id="book" class="container tab-pane active">
-                      <div class="container" style="height:1rem">
+                      <div class="container">
 
                         <!-- choose the type of the ticket  -->
-                        <fieldset style="justify-content-center">
+                        <fieldset class="justify-content-center">
                           <!-- TODO: change the input dependent on the input from the radio button  -->
                           <style media="screen">
                               .form-check-input[type="radio"]:checked + label:after,
@@ -112,64 +106,88 @@
                               label.btn input[type="radio"].with-gap:checked + label:after {
                               background-color: #0000E1; }
                           </style>
-                          <div class="form-check-inline">
-                            <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio"> One way
-                            </label>
-                          </div>
+                        
+                        <div class="container  my-2">
+                        <div class="form-check-inline">
+                          <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio" checked="checked"> One way
+                          </label>
+                        </div>
+
                           <div class="form-check-inline">
                             <label class="form-check-label">
                               <input type="radio" class="form-check-input" name="optradio"> Round trip
                             </label>
-                          </div> <br>
+                          </div>
+                        </div>
                           <!-- select the departure & arrival data   -->
-                          <input type="text" placeholder="From" autocomplete="on" value="">
-                          <input type="text" placeholder="To" autocomplete="on" value=""> <br> <br>
-                          <span class="label label-default"><small> <i class="fas fa-plane-departure"></i>
-                            Depart</small> <input type="date" placeholder="Depart" min="2019-05-12">
-                          </span>
-                          <span class="label label-default"><input type="date" placeholder="Return" min="2019-05-12">
-                            <small>Return <i class="fas fa-plane-arrival"></i></small>
-                          </span>
-
-                          <div class="btn-group ">
-                            <button type="button" class="btn ">Adults</disabled>
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <span class="sr-only">Toggle Dropdown</span>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">1</a>
-                              <a class="dropdown-item" href="#">2</a>
-                              <a class="dropdown-item" href="#">3</a>
-                              <a class="dropdown-item" href="#">4</a>
-                            </div>
-                          </div>
-
-                          <div class="btn-group ">
-                            <button type="button" class="btn ">Children</disabled>
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <span class="sr-only">Toggle Dropdown</span>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">1</a>
-                              <a class="dropdown-item" href="#">2</a>
-                              <a class="dropdown-item" href="#">3</a>
-                              <a class="dropdown-item" href="#">4</a>
-                            </div>
-                          </div>
-
-                          <div class="btn-group " >
-                            <button type="button" class="btn ">Infants</disabled>
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <span class="sr-only">Toggle Dropdown</span>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">1</a>
-                              <a class="dropdown-item" href="#">2</a>
-                              <a class="dropdown-item" href="#">3</a>
-                              <a class="dropdown-item" href="#">4</a>
-                            </div>
-                          </div>
+                          <div class="form-group">
+                          <div class="container">
+                              <div class="row justify-content-around">
+                                <div class="container col-5">
+                                    <input type="text" class="form-control " placeholder="From" id="fromTextBox" autocomplete="on" value="" style="background-color: rgb(51,51,51); color: rgb(239,239,239);">
+                                </div>
+                                <div class="container col-2">
+                                    <a href="discover.html"><i class="fas fa-globe-africa"></i></a>
+                                </div>
+                        <div class="container btn-group col-5 ">
+                          <input type="text" class="form-control ml-2" placeholder="To" id="toTextBox" autocomplete="on" value="" style="background-color: rgb(51,51,51); color: rgb(239,239,239);"> 
+                        </div>
+                      </div>
+                        </div>
+                        <div class="container my-1">
+                        <div class="row justify-content-center">
+                        <div class="container col-6">
+                            <div class="row align-items-center">
+                                <label for="departureDate" class="col-3 m-0 p-0"> <i class="fas fa-plane-departure"></i><br>
+                                  <small>departure</small></label>
+                          <input type="date" id="departureDate" class="form-control col-9 align-self-center p-0" placeholder="Depart" style="background-color: rgb(51,51,51); color: rgb(239,239,239); font-size: calc(.5vw + .5vh + 1vmin);">
+                        </div>
+                        </div>
+                        <div class="container col-6">
+                          <div class="row align-items-center">
+                            <input type="date" id="returnDate" class="form-control col-9 align-self-center p-0" placeholder="Return" min="2019-05-12" style="background-color: rgb(51,51,51); color: rgb(239,239,239); font-size: calc(.5vw + .5vh + 1vmin);">
+                            <label for="returnDate" class="col-3 m-0 p-0"> <i class="fas fa-plane-departure"></i><br>
+                              <small>return</small></label>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div class="container">
+                      <div class ="row">
+                    <div class="form-group col-4">
+                      <label for="inputState" class="m-0" style="background-color: rgb(51,51,51); color: white;">Adult</label>
+                      <select id="inputState" class="form-control text-center p-0" style="height:4vh; background-color: rgb(51,51,51); color: white;">
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-4">
+                      <label for="inputState" class="m-0" style="background-color: rgb(51,51,51); color: white;">Children</label>
+                          <select id="inputState" class="form-control text-center p-0" style="height: 4vh; background-color: rgb(51,51,51); color: white;">
+                              <option selected>0</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-4">
+                      <label for="inputState" class="m-0" style="background-color: rgb(51,51,51); color: white;">Infants</label>
+                      <select id="inputState" class="form-control text-center p-0" style="height: 4vh; background-color: rgb(51,51,51); color: white;">
+                          <option selected>0</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                      </select>
+                    </div>
+                  </div>
+                </div> 
+                        </div>
                           <style media="screen">
                             .btn{
                               margin-top: .7rem;
@@ -179,44 +197,54 @@
                           Show flights <i class="fas fa-plane"></i></button>
                         </fieldset>
                       </div>
-
                     </div>
 
-                    <!-- Manage booking tab container  -->
+               <!-- Manage booking tab container  -->
                     <div id="mbooking" class="container tab-pane fade"><br>
                       <fieldset>
-
-                        <input type="text" placeholder="Last Name" autocomplete="on" value="">
-                        <input type="text" placeholder="Booking refrence" autocomplete="on" value="">
-                        <br>
+                          <div class="form-group">
+                              <div class="container">
+                                  <div class="row justify-content-between">
+                                    <div class="container col-6">
+                              <input type="text" class="form-control" placeholder="Family Name" autocomplete="on" value="" style="background-color: rgb(51,51,51); color: rgb(239,239,239);">
+                            </div>
+                            <div class="container col-6">
+                              <input type="text" class="form-control" placeholder="reservation" autocomplete="on" value="" style="background-color: rgb(51,51,51); color: rgb(239,239,239);"> 
+                            </div>
+                          </div>
+                            </div>
                         <button type="button" id="exp" class="btn btn-primary">
                           Retrieve booking <i class="fas fa-undo-alt"></i></button>
                       </fieldset>
-
-
                     </div>
+
+
                     <div id="flight" class="container tab-pane fade"><br>
                       <fieldset>
-                        <input type="text" placeholder="From / Flight number" autocomplete="on" value="">
-                          <input type="text" placeholder="To" autocomplete="on" value="">
-                          <style media="screen">
-                            #modi{
-                              height:calc(2rem);
-                              margin-top: .rem!important
-                              border: none;
-                              padding-top: 3px;
-                              padding-bottom: 3px;
-                              margin-top: 0px;
 
-                            }
+                          <div class="form-group">
+                              <div class="container-fluid">
+
+                                  <div class="row justify-content-between">
+                                    <div class="container col-4">
+                              <input type="text" class="form-control" placeholder="From / Flight number" autocomplete="on" value="" style="height: 2.5rem;background-color: rgb(51,51,51); color: rgb(239,239,239);">
+                            </div>
+                            <div class="container col-4">
+                              <input type="text" class="form-control" placeholder="To" autocomplete="on" value="" style="height: 2.5rem;background-color: rgb(51,51,51); color: rgb(239,239,239);"> 
+                              
+                            </div>
+                            <div class="container col-4">
+                              <select id="inputState" class="form-control text-center" style="background-color: rgb(51,51,51); color: white;">
+                                  <option selected>leaving</option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
                           </style>
-                          <select class="custom-select my-1 mr-sm-2" id="modi">
-                             <option selected>Choose...</option>
-                             <option value="1">One</option>
-                             <option value="2">Two</option>
-                             <option value="3">Three</option>
-                         </select>
-
                          <button type="button" class="btn btn-primary">
                            Search flights <i class="fas fa-plane"></i> </button>
 
@@ -235,25 +263,17 @@
                 });
               });
               </script>
-
-
             </div>
 
             <!-- footer of the page containing email and github repository of the project -->
-            <div class="mastfoot">
-              <div class="inner">
+            <div class="footer container mt-4">
+              
                 <p>Credits <a href="https://github.com/RiadMohamed/AirportWebpage"><i class="far fa-copyright"></i>
                    CSE334</a>, by <a href="mailto:dabour97@gmail.com?Subject=Customer%Feedback">Airline Team <i class="fa fa-envelope"></i>
                 </a>
               </p>
-              </div>
             </div>
 
-        </div>
-
-      </div>
-
-    </div>
 
 
     <!-- Bootstrap core JavaScript
@@ -264,6 +284,7 @@
 
     <!-- tether dependency for bootstrap4 alpha  -->
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="index.js"></script>
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
