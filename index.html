@@ -1,161 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>CSE334 Airlines</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <title>CSE334 Airlines</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 
 
 
-    <!-- Bootstrap core CSS -->
-    <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="http://v4-alpha.getbootstrap.com/examples/cover/cover.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="http://v4-alpha.getbootstrap.com/examples/cover/cover.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 
-    <!-- Font Awesome for icons   -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!-- Font Awesome for icons   -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-    <!-- My stylesheet -->
-    <link rel="stylesheet" href="stylesheet.css">
-    <!-- jQuery  -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.js"
-      integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
-      crossorigin="anonymous">
-    </script>
+  <!-- My stylesheet -->
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- jQuery  -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="index.js"></script>
 
-    
 
-  </head>
-  <body>
-         <!-- Navigation bar containing the website pages   -->
-     <div class="container-fluid">
-         <div class="navbar navbar-fluid navbar-expand-xl py-0 navbar-light bg-white font-weight-bold sticky-top mb-3">
-          <div class="row justify-content-around">
-            <div class="container col-6">
-          <h4 class="masthead-brand">Above <small>the sky</small><i class="fas fa-plane-departure"></i> </h4>
+</head>
+
+<body>
+  <!-- Navigation bar containing the website pages   -->
+  <div class="container-fluid " style="padding:0.7rem;">
+    <div class="navbar navbar-fluid navbar-expand-xl py-0 navbar-light bg-white font-weight-bold sticky-top mb-3">
+      <div class="row justify-content-around">
+        <div class="container col-6">
+          <h4 class="masthead-brand">Above <small>the <i class="fas fa-plane"></i> sky</small></h4>
         </div>
         <div class="container col-6">
-                <nav class="nav  nav-masthead nav-justified">
-                  <a class="nav-link active " href="index.html">Book</a>
-                  <a class="nav-link mx-2" href="sign.html">Sign-in</a>
-                  <a class="nav-link mx-0" href="about.html">About us</a>
-                </nav>
-            </div>
-          </div>
+          <nav class="nav  nav-masthead nav-justified">
+            <a class="nav-link active " href="index.html">Book</a>
+            <a class="nav-link" href="discover.html">Discover</a>
+            <a class="nav-link mx-2" href="sign.html">Sign in</a>
+            <a class="nav-link mx-0" href="about.html">About us</a>
+          </nav>
         </div>
       </div>
+    </div>
+  </div>
 
-          <div class="container mt-0">
-              <img src="images/logo.png" alt="Logo" style="width:37vw;">
-          </div>
+  <div class="container mt-0">
+    <img src="images/logo.png" alt="Logo" style="width:37vw;">
+  </div>
 
-          <!-- Body of the page  -->
-            <div class="container mt-5">
+  <!-- Body of the page  -->
+  <div class="container mt-5">
 
-              <!--Logo of the company  -->
+    <!--Logo of the company  -->
 
-                <!-- Tabs -->
-                <ul class="nav nav-tabs justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#book">Book</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#mbooking">Manage booking</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#flight">Flight status</a>
-                  </li>
-                </ul>
+    <!-- Tabs -->
+    <ul class="nav nav-tabs justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="#book">Book</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#mbooking">Manage booking</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#flight">Flight status</a>
+      </li>
+    </ul>
 
-                <!-- Tabs content -->
+    <!-- Tabs content -->
 
-                <div class="container" style="height:21rem">
+    <div class="container" style="height:21rem">
 
-                  <div class="tab-content">
-                    <!-- Book tab container  -->
-                    <div id="book" class="container tab-pane active">
-                      <div class="container">
+      <div class="tab-content">
+        <!-- Book tab container  -->
+        <div id="book" class="container tab-pane active">
+          <div class="container">
 
-                        <!-- choose the type of the ticket  -->
-                        <fieldset class="justify-content-center">
-                          <!-- TODO: change the input dependent on the input from the radio button  -->
-                          <style media="screen">
-                              .form-check-input[type="radio"]:checked + label:after,
-                              .form-check-input[type="radio"].with-gap:checked + label:before,
-                              .form-check-input[type="radio"].with-gap:checked + label:after,
-                              label.btn input[type="radio"]:checked + label:after,
-                              label.btn input[type="radio"].with-gap:checked + label:before,
-                              label.btn input[type="radio"].with-gap:checked + label:after {
-                              border: 2px solid #4285f4; }
+            <!-- choose the type of the ticket  -->
+            <fieldset class="justify-content-center">
+              <!-- TODO: change the input dependent on the input from the radio button  -->
+              <style media="screen">
+                .form-check-input[type="radio"]:checked+label:after,
+                .form-check-input[type="radio"].with-gap:checked+label:before,
+                .form-check-input[type="radio"].with-gap:checked+label:after,
+                label.btn input[type="radio"]:checked+label:after,
+                label.btn input[type="radio"].with-gap:checked+label:before,
+                label.btn input[type="radio"].with-gap:checked+label:after {
+                  border: 2px solid #4285f4;
+                }
 
-                              .form-check-input[type="radio"]:checked + label:after,
-                              .form-check-input[type="radio"].with-gap:checked + label:after,
-                              label.btn input[type="radio"]:checked + label:after,
-                              label.btn input[type="radio"].with-gap:checked + label:after {
-                              background-color: #0000E1; }
-                          </style>
-                        
-                        <div class="container  my-2">
-                        <div class="form-check-inline">
-                          <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio" checked="checked"> One way
-                          </label>
-                        </div>
+                .form-check-input[type="radio"]:checked+label:after,
+                .form-check-input[type="radio"].with-gap:checked+label:after,
+                label.btn input[type="radio"]:checked+label:after,
+                label.btn input[type="radio"].with-gap:checked+label:after {
+                  background-color: #0000E1;
+                }
+              </style>
 
-                          <div class="form-check-inline">
-                            <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio"> Round trip
-                            </label>
-                          </div>
-                        </div>
-                          <!-- select the departure & arrival data   -->
-                          <div class="form-group">
-                          <div class="container">
-                              <div class="row justify-content-around">
-                                <div class="container col-5">
-                                    <input type="text" class="form-control " placeholder="From" id="fromTextBox" autocomplete="on" value="" style="background-color: rgb(51,51,51); color: rgb(239,239,239);">
-                                </div>
-                                <div class="container col-2">
-                                    <a href="discover.html"><i class="fas fa-globe-africa"></i></a>
-                                </div>
-                        <div class="container btn-group col-5 ">
-                          <input type="text" class="form-control ml-2" placeholder="To" id="toTextBox" autocomplete="on" value="" style="background-color: rgb(51,51,51); color: rgb(239,239,239);"> 
-                        </div>
-                      </div>
-                        </div>
-                        <div class="container my-1">
-                        <div class="row justify-content-center">
-                        <div class="container col-6">
-                            <div class="row align-items-center">
-                                <label for="departureDate" class="col-3 m-0 p-0"> <i class="fas fa-plane-departure"></i><br>
-                                  <small>departure</small></label>
-                          <input type="date" id="departureDate" class="form-control col-9 align-self-center p-0" placeholder="Depart" style="background-color: rgb(51,51,51); color: rgb(239,239,239); font-size: calc(.5vw + .5vh + 1vmin);">
-                        </div>
-                        </div>
-                        <div class="container col-6">
-                          <div class="row align-items-center">
-                            <input type="date" id="returnDate" class="form-control col-9 align-self-center p-0" placeholder="Return" min="2019-05-12" style="background-color: rgb(51,51,51); color: rgb(239,239,239); font-size: calc(.5vw + .5vh + 1vmin);">
-                            <label for="returnDate" class="col-3 m-0 p-0"> <i class="fas fa-plane-departure"></i><br>
-                              <small>return</small></label>
-                        </div>
-                        </div>
+              <div class="container  my-2">
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio" checked="checked"> One way
+                  </label>
+                </div>
+
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio"> Round trip
+                  </label>
+                </div>
+              </div>
+              <!-- select the departure & arrival data   -->
+              <div class="form-group">
+                <div class="container">
+                  <div class="row justify-content-around">
+                    <div class="container col-5">
+                      <input type="text" class="form-control " placeholder="From" id="fromTextBox" autocomplete="on" value="" style="background-color: rgb(51,51,51); color: rgb(239,239,239);">
+                    </div>
+                    <div class="container col-2">
+                      <a href="discover.html"><i class="fas fa-globe-africa"></i></a>
+                    </div>
+                    <div class="container btn-group col-5 ">
+                      <input type="text" class="form-control ml-2" placeholder="To" id="toTextBox" autocomplete="on" value="" style="background-color: rgb(51,51,51); color: rgb(239,239,239);">
+                    </div>
+                  </div>
+                </div>
+                <div class="container my-1">
+                  <div class="row justify-content-center">
+                    <div class="container col-6">
+                      <div class="row align-items-center">
+                        <label for="departureDate" class="col-3 m-0 p-0"> <i class="fas fa-plane-departure"></i><br>
+                          <small>departure</small></label>
+                        <input type="date" id="departureDate" class="form-control col-9 align-self-center p-0" placeholder="Depart" style="background-color: rgb(51,51,51); color: rgb(239,239,239); font-size: calc(.5vw + .5vh + 1vmin);">
                       </div>
                     </div>
-                   
-                    <div class="container">
-                      <div class ="row">
+                    <div class="container col-6">
+                      <div class="row align-items-center">
+                        <input type="date" id="returnDate" class="form-control col-9 align-self-center p-0" placeholder="Return" min="2019-05-12" style="background-color: rgb(51,51,51); color: rgb(239,239,239); font-size: calc(.5vw + .5vh + 1vmin);">
+                        <label for="returnDate" class="col-3 m-0 p-0"> <i class="fas fa-plane-arrival"></i><br>
+                          <small>return</small></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="row">
                     <div class="form-group col-4">
                       <label for="inputState" class="m-0" style="background-color: rgb(51,51,51); color: white;">Adult</label>
                       <select id="inputState" class="form-control text-center p-0" style="height:4vh; background-color: rgb(51,51,51); color: white;">
@@ -167,131 +169,132 @@
                     </div>
                     <div class="form-group col-4">
                       <label for="inputState" class="m-0" style="background-color: rgb(51,51,51); color: white;">Children</label>
-                          <select id="inputState" class="form-control text-center p-0" style="height: 4vh; background-color: rgb(51,51,51); color: white;">
-                              <option selected>0</option>
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
+                      <select id="inputState" class="form-control text-center p-0" style="height: 4vh; background-color: rgb(51,51,51); color: white;">
+                        <option selected>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
                       </select>
                     </div>
                     <div class="form-group col-4">
                       <label for="inputState" class="m-0" style="background-color: rgb(51,51,51); color: white;">Infants</label>
                       <select id="inputState" class="form-control text-center p-0" style="height: 4vh; background-color: rgb(51,51,51); color: white;">
-                          <option selected>0</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
+                        <option selected>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
                       </select>
                     </div>
                   </div>
-                </div> 
-                        </div>
-                          <style media="screen">
-                            .btn{
-                              margin-top: .7rem;
-                            }
-                          </style>
-                          <button type="button" class="btn btn-primary">
-                          Show flights <i class="fas fa-plane"></i></button>
-                        </fieldset>
-                      </div>
-                    </div>
-
-               <!-- Manage booking tab container  -->
-                    <div id="mbooking" class="container tab-pane fade"><br>
-                      <fieldset>
-                          <div class="form-group">
-                              <div class="container">
-                                  <div class="row justify-content-between">
-                                    <div class="container col-6">
-                              <input type="text" class="form-control" placeholder="Family Name" autocomplete="on" value="" style="background-color: rgb(51,51,51); color: rgb(239,239,239);">
-                            </div>
-                            <div class="container col-6">
-                              <input type="text" class="form-control" placeholder="reservation" autocomplete="on" value="" style="background-color: rgb(51,51,51); color: rgb(239,239,239);"> 
-                            </div>
-                          </div>
-                            </div>
-                        <button type="button" id="exp" class="btn btn-primary">
-                          Retrieve booking <i class="fas fa-undo-alt"></i></button>
-                      </fieldset>
-                    </div>
-
-
-                    <div id="flight" class="container tab-pane fade"><br>
-                      <fieldset>
-
-                          <div class="form-group">
-                              <div class="container-fluid">
-
-                                  <div class="row justify-content-between">
-                                    <div class="container col-4">
-                              <input type="text" class="form-control" placeholder="From / Flight number" autocomplete="on" value="" style="height: 2.5rem;background-color: rgb(51,51,51); color: rgb(239,239,239);">
-                            </div>
-                            <div class="container col-4">
-                              <input type="text" class="form-control" placeholder="To" autocomplete="on" value="" style="height: 2.5rem;background-color: rgb(51,51,51); color: rgb(239,239,239);"> 
-                              
-                            </div>
-                            <div class="container col-4">
-                              <select id="inputState" class="form-control text-center" style="background-color: rgb(51,51,51); color: white;">
-                                  <option selected>leaving</option>
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          </style>
-                         <button type="button" class="btn btn-primary">
-                           Search flights <i class="fas fa-plane"></i> </button>
-
-                      </fieldset>
-                    </div>
-
                 </div>
               </div>
+              <style media="screen">
+                .btn {
+                  margin-top: .7rem;
+                }
+              </style>
+              <button type="button" class="btn btn-primary">
+                Show flights <i class="fas fa-plane"></i></button>
+            </fieldset>
+          </div>
+        </div>
 
-<!--                  Scripts section <! TODO: Adding scripts on external file  -->
-              <!-- jQuery function to change the taps  -->
-              <script>
-              $(document).ready(function(){
-                $(".nav-tabs a").click(function(){
-                  $(this).tab('show');
-                });
-              });
-              </script>
-            </div>
-
-            <!-- footer of the page containing email and github repository of the project -->
-            <div class="footer container mt-4">
-              
-                <p>Credits <a href="https://github.com/RiadMohamed/AirportWebpage"><i class="far fa-copyright"></i>
-                   CSE334</a>, by <a href="mailto:dabour97@gmail.com?Subject=Customer%Feedback">Airline Team <i class="fa fa-envelope"></i>
-                </a>
-              </p>
-            </div>
-
+        <!-- Manage booking tab container  -->
+        <div id="mbooking" class="container tab-pane fade"><br>
+          <fieldset>
+            <div class="form-group">
+              <div class="container">
+                <div class="row justify-content-between">
+                  <div class="container col-6">
+                    <input type="text" class="form-control" placeholder="Family Name" autocomplete="on" value="" style="background-color: rgb(51,51,51); color: rgb(239,239,239);">
+                  </div>
+                  <div class="container col-6">
+                    <input type="text" class="form-control" placeholder="reservation" autocomplete="on" value="" style="background-color: rgb(51,51,51); color: rgb(239,239,239);">
+                  </div>
+                </div>
+              </div>
+              <button type="button" id="exp" class="btn btn-primary">
+                Retrieve booking <i class="fas fa-undo-alt"></i></button>
+          </fieldset>
+        </div>
 
 
-    <!-- Bootstrap core JavaScript
+        <div id="flight" class="container tab-pane fade"><br>
+          <fieldset>
+
+            <div class="form-group">
+              <div class="container-fluid">
+
+                <div class="row justify-content-between">
+                  <div class="container col-4">
+                    <input type="text" class="form-control" placeholder="From / Flight number" autocomplete="on" value="" style="height: 2.5rem;background-color: rgb(51,51,51); color: rgb(239,239,239);">
+                  </div>
+                  <div class="container col-4">
+                    <input type="text" class="form-control" placeholder="To" autocomplete="on" value="" style="height: 2.5rem;background-color: rgb(51,51,51); color: rgb(239,239,239);">
+
+                  </div>
+                  <div class="container col-4">
+                    <select id="inputState" class="form-control text-center" style="background-color: rgb(51,51,51); color: white;">
+                      <option selected>leaving</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              </style>
+              <button type="button" class="btn btn-primary">
+                Search flights <i class="fas fa-plane"></i> </button>
+
+          </fieldset>
+        </div>
+
+      </div>
+    </div>
+
+    <!--                  Scripts section <! TODO: Adding scripts on external file  -->
+    <!-- jQuery function to change the taps  -->
+    <script>
+      $(document).ready(function() {
+        $(".nav-tabs a").click(function() {
+          $(this).tab('show');
+        });
+      });
+    </script>
+  </div>
+
+  <!-- footer of the page containing email and github repository of the project -->
+  <div class="footer container mt-4">
+
+    <p>Credits <a href="https://github.com/RiadMohamed/AirportWebpage"><i class="far fa-copyright"></i>
+        CSE334</a>, by <a href="mailto:dabour97@gmail.com?Subject=Customer%Feedback">Airline Team <i class="fa fa-envelope"></i>
+      </a>
+    </p>
+  </div>
+
+
+
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+  <!-- Placed at the end of the document so the pages load faster -->
 
 
 
-    <!-- tether dependency for bootstrap4 alpha  -->
-    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-    <script src="index.js"></script>
+  <!-- tether dependency for bootstrap4 alpha  -->
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 
-    <script src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  <script src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
 
 
-  </body>
+</body>
+
 </html>

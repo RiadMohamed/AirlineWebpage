@@ -1,52 +1,61 @@
-input{
-    text-align:center;
+input {
+  text-align: center;
 }
 
-::placeholder { 
-    color: white; 
+::placeholder {
+  color: white;
 }
 
-select{
-    text-align-last:center; 
+select {
+  text-align-last: center;
 }
 
-h4{
-    font-size: calc(1vw + 1vh + 1vmin);
-}
-a{
-   border: 0px 0px 0px 0px;
+h4 {
+  font-size: calc(1vw + 1vh + 1vmin);
 }
 
-body{
-    font-size: calc(.5vw + .5vh + 1vmin);
+a {
+  border: 0px 0px 0px 0px;
 }
 
-.footer{
-    height:auto;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    padding:20px;
+body {
+  font-size: calc(.5vw + .5vh + 0.7vmin);
+  text-shadow: 5px 5px 10px black;
+  font-family: cursive;
 }
 
-.card{
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
+.footer {
+  height: auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
 
+.footer p {
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .5);
+  color: rgba(255, 255, 255, .5);
 }
-.card-body{
-    width: calc(9vw + 10vh + 3vmin);
-    align-self: center;
+
+.card {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
 }
-.card img{
-    height: calc(5vw + 15vh + 2vmin);
-    width: calc(9vw + 10vh + 3vmin);
-    object-fit: fill;
-  
+
+.card-body {
+  width: calc(9vw + 10vh + 3vmin);
+  align-self: center;
 }
-.card-header{
-    background-color: rgba(0, 0, 0, 0);  
-    border:none;
+
+.card img {
+  height: calc(5vw + 15vh + 2vmin);
+  width: calc(9vw + 10vh + 3vmin);
+  object-fit: fill;
+}
+
+.card-header {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
 }
